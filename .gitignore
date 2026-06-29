@@ -1,0 +1,70 @@
+# =============================================================================
+# .gitignore — Système de Recommandation E-commerce (PFA)
+# =============================================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.env
+.venv
+venv/
+env/
+
+# --- Bases de données locales ---
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Node.js / Frontend ---
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Docker volumes (données persistées localement) ---
+minio_data/
+mongo_data/
+mongodb_data/
+prometheus_data/
+grafana_data/
+
+# --- Dataset Retailrocket (fichiers volumineux) ---
+events.csv
+*.parquet
+*.csv
+
+# --- Fichiers IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Fichiers temporaires ---
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Fichiers de test ad-hoc ---
+test_products.json
+evaluate_all_models.py

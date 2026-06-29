@@ -1,0 +1,23 @@
+# Fichiers Python compilés
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environnement virtuel local
+.venv/
+venv/
+env/
+
+# Variables d'environnement sensibles (ne jamais committer)
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+
+# Fichiers IDE
+.vscode/
+.idea/
+*.swp

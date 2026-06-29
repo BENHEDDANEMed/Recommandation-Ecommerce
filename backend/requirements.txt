@@ -1,0 +1,35 @@
+# =============================================================================
+# requirements.txt — Dépendances du Backend FastAPI
+# =============================================================================
+
+# --- Framework Web Asynchrone ---
+fastapi==0.111.0
+uvicorn[standard]==0.30.1     # Serveur ASGI (inclut watchfiles pour --reload)
+
+# --- Base de données MongoDB Asynchrone ---
+motor==3.4.0                  # Driver MongoDB async (wraps PyMongo)
+pymongo==4.7.3                # Driver MongoDB sync (requis par Motor)
+
+# --- Validation et typage des données ---
+pydantic               # Validation des schemas (intégré à FastAPI)
+pydantic-settings      # Gestion des variables d'environnement via .env
+
+# --- Kafka Producer (pour le endpoint POST /event) ---
+aiokafka==0.10.0              # Driver Kafka asynchrone pour Python
+
+# --- MinIO Client (pour récupérer le modèle ALS) ---
+minio==7.2.7
+
+# --- Monitoring (export des métriques pour Prometheus) ---
+prometheus-fastapi-instrumentator==7.0.0
+
+# --- HTTP Client Asynchrone ---
+httpx==0.27.0                 # Utile pour les tests et les requêtes inter-services
+
+# --- Utilitaires ---
+python-dotenv==1.0.1          # Chargement du fichier .env en développement
+
+# --- Machine Learning ---
+pyspark==3.5.1                # Requis pour charger le modèle ALS
+numpy
+pandas

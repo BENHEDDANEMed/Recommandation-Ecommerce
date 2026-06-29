@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "date-fns": "^4.4.0",
+    "recharts": "^3.8.1"
+  }
+}
